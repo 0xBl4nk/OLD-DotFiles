@@ -1,0 +1,117 @@
+env:
+  TERM: xterm-256color
+
+window:
+  padding:
+    x: 20
+    y: 25
+  dynamic_padding: false
+
+  title: Alacritty
+  class:
+    instance: Alacritty
+    general: Alacritty
+
+scrolling:
+  history: 5000
+
+font:
+  normal:
+    family: Source Code Pro
+    style: Regular
+  bold:
+    style: Bold
+  italic:
+    family: Source Code Pro
+    style: Italic
+  bold_italic:
+    family: Source Code Pro
+
+  # Font
+  size: 12.0
+  offset:
+    x: 0
+    y: 1
+
+draw_bold_text_with_bright_colors: true
+
+colors:
+  # default colors
+  primary:
+    # or use #18191E for the other Lighthaus bg color
+    background:     "#000000"
+    foreground:     "#FFFADE"
+    dim_foreground: "#21252D"
+
+  # cursor colors
+  cursor:
+    text:           "#18191E"
+    cursor:         "#47A8A1"
+  vi_mode_cursor:
+    text:           "#18191E"
+    cursor:         "#5AD1AA"
+
+  # selection
+  selection:
+    text:           "#FF4D00"
+    background:     "#090B26"
+
+  # searching & matching
+  search:
+    matches:
+      foreground:   "#21252D"
+      background:   "#E25600"
+    bar:
+      background:   "#CCCCCC"
+      foreground:   "#21252D"
+
+  # normal term colors
+  normal:
+    black:          "#18191E"
+    red:            "#FC2929"
+    green:          "#44B273"
+    yellow:         "#E25600"
+    blue:           "#1D918B"
+    magenta:        "#D16BB7"
+    cyan:           "#00BFA4"
+    white:          "#CCCCCC"
+
+  # bright term colors
+  bright:
+    black:          "#8E8D8D"
+    red:            "#FF5050"
+    green:          "#50C16E"
+    yellow:         "#ED722E"
+    blue:           "#47A8A1"
+    magenta:        "#D68EB2"
+    cyan:           "#5AD1AA"
+    white:          "#FFFADE"
+
+  # dim term colors
+  dim:
+    black:          "#46474A"
+    red:            "#EC6565"
+    green:          "#72B890"
+    yellow:         "#DC7C45"
+    blue:           "#539D99"
+    magenta:        "#D291C1"
+    cyan:           "#42BDAB"
+    white:          "#D6D6D6"
+
+key_bindings:
+  - { key: V,         mods: Control|Shift, action: Paste                       }
+  - { key: C,         mods: Control|Shift, action: Copy                        }
+  - { key: Insert,    mods: Shift,         action: PasteSelection              }
+  - { key: Key0,      mods: Control,       action: ResetFontSize               }
+  - { key: Equals,    mods: Control,       action: IncreaseFontSize            }
+  - { key: Plus,      mods: Control,       action: IncreaseFontSize            }
+  - { key: Minus,     mods: Control,       action: DecreaseFontSize            }
+  - { key: F11,       mods: None,          action: ToggleFullscreen            }
+  - { key: Paste,     mods: None,          action: Paste                       }
+  - { key: Copy,      mods: None,          action: Copy                        }
+  - { key: L,         mods: Control,       action: ClearLogNotice              }
+  - { key: L,         mods: Control,       chars: "\x0c"                       }
+  - { key: PageUp,    mods: None,          action: ScrollPageUp,   mode: ~Alt  }
+  - { key: PageDown,  mods: None,          action: ScrollPageDown, mode: ~Alt  }
+  - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
+  - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
