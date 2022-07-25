@@ -24,6 +24,12 @@ cp -r fonts ~/.local/share/
 fc-cache -f -v
 ```
 
+Change wallpaper
+```
+mkdir ~/Pictures
+cp wallpaper.jpg ~/Pictures
+```
+
 * Install packer for nvim
 ```
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
