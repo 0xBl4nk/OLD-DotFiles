@@ -1,7 +1,7 @@
 return require'packer'.startup(function()
     use 'wbthomason/packer.nvim'
-    
-    use 'mrjones2014/lighthaus.nvim'
+
+    use 'navarasu/onedark.nvim'
 
     use 'kyazdani42/nvim-web-devicons'
     use 'kyazdani42/nvim-tree.lua'
