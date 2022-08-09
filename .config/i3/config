@@ -3,14 +3,14 @@ set $mod Mod4
 for_window [class="^.*"] border pixel 2 
 gaps inner 7 
 gaps outer 7
+client.focused #555555 #555555 #ffffff #2e9ef4     #CC0000
 
-font pango:Source Code Pro 8
+font pango:Source Code Pro 10
 
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
-exec_always flameshot
 
 # -------Rules--------
 assign [class="Firefox"] $ws2
@@ -92,16 +92,16 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # Workspaces
-set $ws1 "1: "
-set $ws2 "2: "
-set $ws3 "3: "
-set $ws4 "4: "
-set $ws5 "5: "
-set $ws6 "6: "
-set $ws7 "7: "
-set $ws8 "8: "
-set $ws9 "9: "
-set $ws10 "10: "
+set $ws1 "1:"
+set $ws2 "2:"
+set $ws3 "3:"
+set $ws4 "4:"
+set $ws5 "5:"
+set $ws6 "6:"
+set $ws7 "7:"
+set $ws8 "8:"
+set $ws9 "9:"
+set $ws10 "10:"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -154,6 +154,12 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
         separator_symbol "⁞"
+        
+        strip_workspace_numbers yes
+
+        colors {
+            focused_workspace #FF0000 #222222 #FF0000
+        }
 }
 
 
