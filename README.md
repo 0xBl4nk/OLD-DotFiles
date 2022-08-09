@@ -41,3 +41,17 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 echo "media-libs/freetype png" > /etc/portage/package.use/freetype
 emerge noto noto-emojie noto-cjk
 ```
+
+flags
+```
+ACCEPT_LICENSE="*"
+
+VIDEO_CARDS="amdgpu radeonsi virgl"
+QEMU_SOFTMMU_TARGETS="arm x86_64 sparc"
+
+GRUB_PLATFORMS="efi-64"
+
+QEMU_USER_TARGETS="x86_64"
+
+EMERGE_DEFAULT_OPTS="--ask --verbose"
+```
