@@ -55,3 +55,8 @@ QEMU_USER_TARGETS="x86_64"
 
 EMERGE_DEFAULT_OPTS="--ask --verbose"
 ```
+extra 
+```
+ Option "Capabilities" "0x00000000" 
+ ```
+ 
