@@ -44,6 +44,15 @@ emerge noto noto-emojie noto-cjk
 
 flags
 ```
+COMMON_FLAGS="-march=znver2 -O2 -pipe"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
+
+MAKEOPTS="-j12"
+
+USE="X elogind pam alsa pulseaudio -gtk -gnome -kde -systemd"
 ACCEPT_LICENSE="*"
 
 VIDEO_CARDS="amdgpu radeonsi virgl"
@@ -54,6 +63,15 @@ GRUB_PLATFORMS="efi-64"
 QEMU_USER_TARGETS="x86_64"
 
 EMERGE_DEFAULT_OPTS="--ask --verbose"
+
+# NOTE: This stage was built with the bindist Use flag enabled
+PORTDIR="/var/db/repos/gentoo"
+DISTDIR="/var/cache/distfiles"
+PKGDIR="/var/cache/binpkgs"
+
+# This sets the language of build output to English.
+# Please keep this setting intact when reporting bugs.
+LC_MESSAGES=C
 ```
 extra 
 ```
