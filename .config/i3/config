@@ -13,7 +13,6 @@ exec --no-startup-id nm-applet
 
 
 # -------Rules--------
-assign [class="Firefox"] $ws2
 assign [class="discord"] $ws3
 assign [class="Pavucontrol"] $ws5
 
@@ -27,6 +26,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+
+# Chromium
+bindsym $mod+g exec chromium-bin
 
 # Print
 bindsym Print exec flameshot gui
