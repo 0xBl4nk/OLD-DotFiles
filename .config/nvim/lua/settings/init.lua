@@ -2,7 +2,7 @@ local set = vim.opt
 
 --- VIM SETTINGS ---
 
-vim.notify = require("notify")
+--vim.notify = require("notify")
 
 set.mouse = "a"
 
