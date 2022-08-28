@@ -39,7 +39,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 * Fix Emoji Discord
 ```
 echo "media-libs/freetype png" > /etc/portage/package.use/freetype
-emerge noto noto-emojie noto-cjk
+emerge noto noto-emoji noto-cjk
 ```
 
 flags
