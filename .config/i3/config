@@ -1,9 +1,9 @@
 set $mod Mod4
 
-for_window [class="^.*"] border pixel 2 
+for_window [class="^.*"] border pixel 1 
 gaps inner 7 
 gaps outer 7
-client.focused #555555 #555555 #ffffff #2e9ef4     #CC0000
+client.focused #555555 #555555 #ffffff #2e9ef4 #CC0000
 
 font pango:Source Code Pro 10
 

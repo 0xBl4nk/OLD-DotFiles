@@ -148,6 +148,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/fkp/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["presence.nvim"] = {
+    loaded = true,
+    path = "/home/fkp/.local/share/nvim/site/pack/packer/start/presence.nvim",
+    url = "https://github.com/andweeb/presence.nvim"
   }
 }
 
