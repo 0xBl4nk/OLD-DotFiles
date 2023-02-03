@@ -55,7 +55,7 @@ FFLAGS="${COMMON_FLAGS}"
 
 MAKEOPTS="-j12"
 
-USE="X elogind pam alsa pulseaudio -gtk -gnome -kde -systemd"
+USE="X elogind pam alsa pulseaudio -gnome -kde -systemd -bluetooth"
 ACCEPT_LICENSE="*"
 
 VIDEO_CARDS="amdgpu radeonsi virgl"
@@ -75,6 +75,7 @@ PKGDIR="/var/cache/binpkgs"
 # This sets the language of build output to English.
 # Please keep this setting intact when reporting bugs.
 LC_MESSAGES=C
+GENTOO_MIRRORS="https://gentoo.c3sl.ufpr.br/ http://gentoo.c3sl.ufpr.br/ rsync://gentoo.c3sl.ufpr.br/gentoo/"
 ```
 extra 
 ```
