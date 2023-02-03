@@ -36,67 +36,45 @@ font:
 draw_bold_text_with_bright_colors: true
 
 colors:
-  # default colors
+  # Default colors
   primary:
-    # or use #18191E for the other Lighthaus bg color
-    background:     "#000000"
-    foreground:     "#FFFADE"
-    dim_foreground: "#21252D"
+    background: '0x1c1e26'
+    foreground: '0xcbced0'
 
-  # cursor colors
+  # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text:           "#18191E"
-    cursor:         "#47A8A1"
-  vi_mode_cursor:
-    text:           "#18191E"
-    cursor:         "#5AD1AA"
+    text: '0x1c1e26'
+    cursor: '0xcbced0'
 
-  # selection
-  selection:
-    text:           "#FF4D00"
-    background:     "#090B26"
-
-  # searching & matching
-  search:
-    matches:
-      foreground:   "#21252D"
-      background:   "#E25600"
-    bar:
-      background:   "#CCCCCC"
-      foreground:   "#21252D"
-
-  # normal term colors
+  # Normal colors
   normal:
-    black:          "#18191E"
-    red:            "#FC2929"
-    green:          "#44B273"
-    yellow:         "#E25600"
-    blue:           "#1D918B"
-    magenta:        "#D16BB7"
-    cyan:           "#00BFA4"
-    white:          "#CCCCCC"
+    black:   '0x1c1e26'
+    red:     '0xe93c58'
+    green:   '0xefaf8e'
+    yellow:  '0xefb993'
+    blue:    '0xdf5273'
+    magenta: '0xb072d1'
+    cyan:    '0x24a8b4'
+    white:   '0xcbced0'
 
-  # bright term colors
+  # Bright colors
   bright:
-    black:          "#8E8D8D"
-    red:            "#FF5050"
-    green:          "#50C16E"
-    yellow:         "#ED722E"
-    blue:           "#47A8A1"
-    magenta:        "#D68EB2"
-    cyan:           "#5AD1AA"
-    white:          "#FFFADE"
+    black:   '0x6f6f70'
+    red:     '0xe93c58'
+    green:   '0xefaf8e'
+    yellow:  '0xefb993'
+    blue:    '0xdf5273'
+    magenta: '0xb072d1'
+    cyan:    '0x24a8b4'
+    white:   '0xe3e6ee'
 
-  # dim term colors
-  dim:
-    black:          "#46474A"
-    red:            "#EC6565"
-    green:          "#72B890"
-    yellow:         "#DC7C45"
-    blue:           "#539D99"
-    magenta:        "#D291C1"
-    cyan:           "#42BDAB"
-    white:          "#D6D6D6"
+  indexed_colors:
+    - { index: 16, color: '0xe58d7d' }
+    - { index: 17, color: '0xe4a382' }
+    - { index: 18, color: '0x232530' }
+    - { index: 19, color: '0x2e303e' }
+    - { index: 20, color: '0x9da0a2' }
+    - { index: 21, color: '0xdcdfe4' }
 
 key_bindings:
   - { key: V,         mods: Control|Shift, action: Paste                       }
