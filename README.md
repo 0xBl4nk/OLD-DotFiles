@@ -12,7 +12,7 @@
               Web_Browser: Firefox
               Text_editor: Neovim
             Root_commands: Doas
-         Gtk_theme_config:
+         Gtk_theme_config: lxappearance
 file-listing_command-line: exa (sys-apps/exa)
 ```
 
