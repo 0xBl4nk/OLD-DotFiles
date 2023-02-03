@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/fkp/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["horizon.nvim"] = {
+    loaded = true,
+    path = "/home/fkp/.local/share/nvim/site/pack/packer/start/horizon.nvim",
+    url = "https://github.com/lunarvim/horizon.nvim"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/home/fkp/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
