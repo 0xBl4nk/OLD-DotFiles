@@ -3,14 +3,16 @@
 ## Installation
 * Packages:
 ```
-           Wm: i3-gaps, i3status
-        Audio: pulseaudio, pavucontrol
-     Terminal: Alacritty
-    Wallpaper: Feh
-  Run_Program: Dmenu
-  Web_Browser: Firefox
-  Text_editor: Neovim
-Root_commands: Doas
+
+                       Wm: i3-gaps, i3status
+                    Audio: pulseaudio, pavucontrol
+                 Terminal: Alacritty
+                Wallpaper: Feh
+              Run_Program: Dmenu
+              Web_Browser: Firefox
+              Text_editor: Neovim
+            Root_commands: Doas
+         Gtk_theme_config:
 file-listing command-line: exa (sys-apps/exa)
 ```
 
