@@ -77,6 +77,24 @@ PKGDIR="/var/cache/binpkgs"
 LC_MESSAGES=C
 GENTOO_MIRRORS="https://gentoo.c3sl.ufpr.br/ http://gentoo.c3sl.ufpr.br/ rsync://gentoo.c3sl.ufpr.br/gentoo/"
 ```
+package.use
+```
+mpg > media-sound/mpg123 -pulseaudio
+freetype > media-libs/freetype png
+
+
+00cpu-flags >
+
+*/* CPU_FLAGS_X86: aes avx avx2 f16c fma3 mmx mmxext pclmul popcnt rdrand sha sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3
+# required by media-libs/mesa-22.2.5::gentoo[-video_cards_r600,-video_cards_radeon,video_cards_radeonsi,-video_cards_r300]
+# required by media-libs/libepoxy-1.5.10-r1::gentoo[egl]
+# required by x11-base/xorg-server-21.1.6::gentoo[-minimal]
+# required by x11-drivers/xf86-input-libinput-1.2.1::gentoo
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[input_devices_libinput]
+# required by x11-base/xorg-drivers (argument)
+>=x11-libs/libdrm-2.4.114 video_cards_radeon
+```
+
 extra 
 ```
  Option "Capabilities" "0x00000000" 
