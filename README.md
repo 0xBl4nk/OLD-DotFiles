@@ -13,7 +13,7 @@
               Text_editor: Neovim
             Root_commands: Doas
          Gtk_theme_config:
-file-listing command-line: exa (sys-apps/exa)
+file-listing_command-line: exa (sys-apps/exa)
 ```
 
 * Install Dotfiles: { No... I won't make an auto installer :) }
