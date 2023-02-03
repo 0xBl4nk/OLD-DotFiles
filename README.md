@@ -9,7 +9,7 @@
                  Terminal: Alacritty
                 Wallpaper: Feh
               Run_Program: Dmenu
-              Web_Browser: Firefox
+              Web_Browser: Brave
               Text_editor: Neovim
             Root_commands: Doas
          Gtk_theme_config: lxappearance
