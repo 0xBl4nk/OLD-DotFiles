@@ -6,7 +6,7 @@
 
                        Wm: i3-gaps, i3status
                     Audio: pulseaudio, pavucontrol
-                 Terminal: Alacritty
+                 Terminal: Alacritty, zsh
                 Wallpaper: Feh
               Run_Program: Dmenu
               Web_Browser: Brave
