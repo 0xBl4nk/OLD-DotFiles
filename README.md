@@ -6,14 +6,14 @@
 
                        Wm: i3-gaps, i3status
                     Audio: pulseaudio, pavucontrol
-                 Terminal: Kitty, zsh
+                 Terminal: Alacritty, Kitty, zsh
                 Wallpaper: Feh
+               Compositor: Picom 
               Run_Program: Dmenu
               Web_Browser: Brave
               Text_editor: Neovim
             Root_commands: Doas
-         Gtk_theme_config: lxappearance
-file-listing_command-line: exa (sys-apps/exa)
+     file-listing_command: exa (sys-apps/exa)
 ```
 
 * Install Dotfiles: { No... I won't make an auto installer :) }
