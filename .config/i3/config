@@ -3,7 +3,7 @@ set $mod Mod4
 for_window [class="^.*"] border pixel 1 
 gaps inner 7 
 gaps outer 7
-client.focused #555555 #555555 #ffffff #2e9ef4 #CC0000
+client.focused #555555 #555555 #ffffff #8000ff #8000ff
 
 font pango:Source Code Pro 10
 
@@ -122,7 +122,7 @@ bar {
 
         colors {
             background #1c1e26
-            focused_workspace #FF0000 #222222 #FF0000
+            focused_workspace #8000ff #222222 #8000ff
         }
 
         position top
