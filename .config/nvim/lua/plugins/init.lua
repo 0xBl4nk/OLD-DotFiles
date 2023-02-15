@@ -4,6 +4,12 @@ return require'packer'.startup(function()
     use 'navarasu/onedark.nvim'
     use "lunarvim/horizon.nvim"
 
+    -- install without yarn or npm
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
+
 
     use 'kyazdani42/nvim-web-devicons'
     use 'kyazdani42/nvim-tree.lua'
