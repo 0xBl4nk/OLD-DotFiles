@@ -1,6 +1,5 @@
-# Arthur Ottoni's DotFiles -> Gentoo + i3-gaps
+<h1 style=text-align:center> Arthur Ottoni -> Gentoo DotFiles</h1>
 
-## Installation
 * Packages:
 ```
                        Wm: i3-gaps, i3status
