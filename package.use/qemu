@@ -1,0 +1,7 @@
+app-emulation/qemu alsajpeg curl gtk jack opengl pulseaudio ssh virgl vte 
+# required by app-emulation/libvirt-8.7.0-r1::gentoo[virt-network]
+# required by app-emulation/libvirt-glib-4.0.0::gentoo
+# required by app-emulation/virt-manager-4.0.0::gentoo[-test]
+# required by virt-manager (argument)
+>=net-dns/dnsmasq-2.89 script
+app-emulation/qemu spice
