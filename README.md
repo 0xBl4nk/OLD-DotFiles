@@ -25,6 +25,8 @@ fc-cache -f -v
 ```bash
 mkdir ~/Pictures
 cp wallpaper.jpg ~/Pictures
+cp .fehbg ~/
+
 ```
 
 * Install packer for nvim
