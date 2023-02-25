@@ -44,11 +44,3 @@ echo "media-libs/freetype png" > /etc/portage/package.use/freetype
 emerge noto noto-emoji noto-cjk
 ```
 
-* Fish Commands
-```bash
-set -U fish_greeting
-fish_config prompt choose terlar
-alias --save ls=exa
-alias --save l="ls -la"
-alias --save fetch="clear && neofetch"
-```
