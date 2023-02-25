@@ -15,18 +15,13 @@
             Root_commands: Doas 
 ```
 
-* Install Dotfiles: { No... I won't make an auto installer :) }
-```sh
-git clone https://github.com/ArthurHydr/DotFiles.git
-```
-
 * Install fonts:
 ```bash
 cp -r fonts ~/.local/share/
 fc-cache -f -v
 ```
 
-Change wallpaper
+* Set wallpaper
 ```bash
 mkdir ~/Pictures
 cp wallpaper.jpg ~/Pictures
@@ -38,7 +33,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
-* Fix Emoji Discord
+* Fix Discord-Emoji
 ```bash
 echo "media-libs/freetype png" > /etc/portage/package.use/freetype
 emerge noto noto-emoji noto-cjk
