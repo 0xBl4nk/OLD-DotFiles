@@ -3,15 +3,16 @@
 * Packages:
 ```
                        Wm: i3-gaps, i3status
-                    Audio: pulseaudio, pavucontrol
-                 Terminal: Alacritty, Kitty, zsh
+                       Sh: Fish
+                    Audio: Pulseaudio, Pavucontrol
+                 Terminal: Alacritty
                 Wallpaper: Feh
                Compositor: Picom 
               Run_Program: Dmenu
               Web_Browser: Brave
               Text_editor: Neovim
-            Root_commands: Doas
-     file-listing_command: exa (sys-apps/exa)
+             File-listing: Exa
+            Root_commands: Doas 
 ```
 
 * Install Dotfiles: { No... I won't make an auto installer :) }
@@ -41,4 +42,13 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 ```bash
 echo "media-libs/freetype png" > /etc/portage/package.use/freetype
 emerge noto noto-emoji noto-cjk
+```
+
+* Fish Commands
+```bash
+set -U fish_greeting
+
+alias --save ls=exa
+alias --save l="ls -la"
+alias --save fetch="clear && neofetch"
 ```
