@@ -30,7 +30,7 @@ floating_modifier $mod
 # Print
 bindsym Print exec flameshot gui
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec alacritty
 # kill focused window
 bindsym $mod+Shift+q kill
 # start (a program launcher)
