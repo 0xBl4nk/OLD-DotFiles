@@ -6,10 +6,13 @@ return require'packer'.startup(function()
 
     -- install without yarn or npm
     use({
-        "iamcco/markdown-preview.nvim",
+        'iamcco/markdown-preview.nvim',
         run = function() vim.fn["mkdp#util#install"]() end,
     })
 
+    use {
+        'nvim-treesitter/nvim-treesitter',
+    }
 
     use 'kyazdani42/nvim-web-devicons'
     use 'kyazdani42/nvim-tree.lua'

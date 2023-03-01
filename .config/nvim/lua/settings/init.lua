@@ -5,10 +5,10 @@ local set = vim.opt
 --vim.notify = require("notify")
 
 set.mouse = "a"
-
+    
 set.expandtab	= true
 set.smarttab   	= true
-set.shiftwidth 	= 4
+set.shiftwidth 	= 2
 set.tabstop	= 2
 
 set.hlsearch 	= true

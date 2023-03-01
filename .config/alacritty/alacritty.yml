@@ -12,6 +12,9 @@ window:
     instance: Alacritty
     general: Alacritty
 
+cursor:
+  style: Beam
+
 scrolling:
   history: 5000
 
