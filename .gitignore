@@ -17,4 +17,13 @@
 .config/user-dirs.locale
 .config/weechat
 .config/wireshark
+.config/cef_user_data
+.config/gconf
+.config/obsidian
+.config/pulse
+.config/yarn
+.config/notion-app-enhanced
+.config/NewCP
+.config/Electron
+.gitignore
 
