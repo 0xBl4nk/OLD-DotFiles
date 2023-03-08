@@ -94,10 +94,10 @@ _G.packer_plugins = {
     path = "/home/fkp/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["horizon.nvim"] = {
+  ["darking.nvim"] = {
     loaded = true,
-    path = "/home/fkp/.local/share/nvim/site/pack/packer/start/horizon.nvim",
-    url = "https://github.com/lunarvim/horizon.nvim"
+    path = "/home/fkp/.local/share/nvim/site/pack/packer/start/darking.nvim",
+    url = "https://github.com/ArthurHydr/darking.nvim"
   },
   ["lspkind.nvim"] = {
     loaded = true,
@@ -153,6 +153,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/fkp/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
+  ["nyoom.nvim"] = {
+    loaded = true,
+    path = "/home/fkp/.local/share/nvim/site/pack/packer/start/nyoom.nvim",
+    url = "https://github.com/nyoom-engineering/nyoom.nvim"
   },
   ["onedark.nvim"] = {
     loaded = true,

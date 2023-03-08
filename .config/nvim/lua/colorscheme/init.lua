@@ -6,4 +6,4 @@
 --require('onedark').load()
 --
 
-vim.cmd[[colorscheme horizon]]
+vim.cmd[[colorscheme darking]]

@@ -2,17 +2,16 @@ return require'packer'.startup(function()
     use 'wbthomason/packer.nvim'
 
     use 'navarasu/onedark.nvim'
-    use "lunarvim/horizon.nvim"
-
+    --use 'lunarvim/horizon.nvim'
+    use 'nyoom-engineering/nyoom.nvim'
+    use 'ArthurHydr/darking.nvim'
     -- install without yarn or npm
     use({
         'iamcco/markdown-preview.nvim',
         run = function() vim.fn["mkdp#util#install"]() end,
     })
 
-    use {
-        'nvim-treesitter/nvim-treesitter',
-    }
+    use 'nvim-treesitter/nvim-treesitter'
 
     use 'kyazdani42/nvim-web-devicons'
     use 'kyazdani42/nvim-tree.lua'
